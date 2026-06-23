@@ -10,9 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'python --version'
-                bat 'pip --version'
-                echo 'Build completed successfully.'
+                echo 'Building application...'
             }
         }
 
@@ -24,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Application deployed successfully.'
+                echo 'Deploying application...'
             }
         }
     }
